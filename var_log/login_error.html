@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="login_error.css">
+</head>
+<body>
+    <div class="message">
+        L'utilisateur ou l’adresse e-mail que vous avez saisi(e) n’est associé(e) à aucun compte.
+        <br> Veuillez reessayer.
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <span class="borderLine"></span>
+            <form action="http://www.anita.com/cgi-bin/var_log/verification_login.cgi" method="get">
+                <h2>Sign in</h2>
+    
+                <div class="inputBox">
+                    <input type="text" required="required" name="name">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required" name="password">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+    
+                <input type="submit" name="submit" value="Login" class="submit">
+    
+                <!-- <div class="links"> -->
+                <div class="register">
+    
+                    <!-- <a href="#">Forgot Password?</a> -->
+    
+                    <!-- <a href="sign_up.html">Sign up</a> -->
+                    <p>Don't have an account? : &ensp;<a href="sign_up.html">Register</a></p>
+                </div>
+                <!-- <input type="submit" value="Login" class="submit"> -->
+    
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

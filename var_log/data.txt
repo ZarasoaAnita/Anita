@@ -1,0 +1,4 @@
+name=anita	password=01092004
+name=zarasoa	password=123456
+name=angeline	password=20071981
+name=Lova	password=987654321
