@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de multiplication</title>
+    <style>
+        label{
+            font-size: 1.5rem;
+        }
+        body{
+            background-color: black;
+        }
+        .formulaire{
+            background-color:rgb(241, 90, 115);
+            width:500px;
+            height:500px;
+            margin:auto;
+            margin-top:75px;
+            padding-left: 50px;
+            border-radius: 25px 25px 25px 25px;
+        }
+        input{
+            width:325px;
+            height:75px;
+            margin-left:20px;
+            margin-top:50px;
+        }
+        .multiplication{
+            margin-left:20px;
+            width:150px;
+            height:50px;
+            border-radius: 10px 10px 10px 10px;
+
+        }
+        input{
+            font-size: 20px;
+        }
+        .multiplication:hover{
+            background-color: rgb(31, 30, 30);
+            color:white;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="formulaire">
+    <form action="http://www.zarasoa.com/php/multiplication/traitement.php" method="get">
+
+        <label for="a">a:</label>
+        <input type="number" name="a" required>
+
+        <br><br><br>
+
+        <label for="b">b:</label>
+        <input type="number" name="b" required>
+
+        <br><br><br>
+
+        <input type="submit" name="envoyer" value="Mutliplier" class="multiplication" required>
+
+    </form>
+    </div>
+</body>
+</html>
