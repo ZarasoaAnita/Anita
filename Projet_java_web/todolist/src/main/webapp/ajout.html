@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une tâche</title>
+    <link href="style_ajout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="contenu-au-milieu">
+	    <h2>Ajouter une nouvelle tâche</h2>
+	    <form action="MyServlet" method="post">
+	        <label for="titre">Titre de la tâche :</label>
+	        <input type="text" id="titre" name="titre" required><br><br>
+	        
+	        <label for="description">Description :</label><br>
+	        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+	        
+	        <label for="importance">Importance :</label>
+	        <select id="importance" name="importance">
+	            <option value="Faible">Faible</option>
+	            <option value="Moyenne" selected>Moyenne</option>
+	            <option value="Élevée">Élevée</option>
+	        </select><br><br>
+	        
+	        <label for="date_echeance">Date d'échéance :</label>
+	        <input type="date" id="date_echeance" name="date_echeance"><br><br>
+	        
+            <div class="envoie">
+                <input type="submit" value="Ajouter" class="in">
+            </div>
+	    </form>
+    </div>
+</body>
+</html>
