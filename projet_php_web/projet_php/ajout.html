@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une tâche</title>
+    <link href="style_ajout.css" rel="stylesheet">
+    <style>
+        .form-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+        }
+    
+        .form-item label {
+            flex-basis: 30%;
+            flex-shrink: 0;
+            text-align: right;
+            margin-right: 10px;
+        }
+    
+        .form-item input,
+        .form-item select,
+        .form-item textarea { 
+            flex-basis: 60%;
+            flex-shrink: 0;
+            width: 100%; /* Définissez la largeur sur 100% pour remplir l'espace */
+        }
+    
+        .contenu-au-milieu {
+            width: 50%;
+            margin: auto;
+        }
+    
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<div class="contenu-au-milieu">
+	    <h2>Ajouter une nouvelle tâche</h2>
+	    <form action="traitement_ajout.php" method="post">
+	        <div class="form-item">
+	            <label for="titre">Titre de la tâche :</label>
+	            <input type="text" id="titre" name="titre" required>
+	        </div>
+	        
+	        <div class="form-item">
+	            <label for="description">Description :</label>
+	            <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+	        </div>
+	        
+	        <div class="form-item">
+	            <label for="importance">Importance :</label>
+	            <select id="importance" name="importance">
+	                <option value="Faible">Faible</option>
+	                <option value="Moyenne" selected>Moyenne</option>
+	                <option value="Élevée">Élevée</option>
+	            </select>
+	        </div>
+	        
+	        <div class="form-item">
+	            <label for="date_echeance">Date d'échéance :</label>
+	            <input type="date" id="date_echeance" name="date_echeance" required>
+	        </div>
+	        
+            <div class="envoie">
+                <input type="submit" value="Ajouter" class="in">
+            </div>
+	    </form>
+    </div>
+</body>
+</html>

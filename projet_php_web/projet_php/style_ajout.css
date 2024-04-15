@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+   	background-color: lightgrey;
+    height: 100vh; /* Utilise toute la hauteur de la vue (écran) */
+    display: flex; /* Utilise le modèle de boîte flexible pour le centrage vertical */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+
+}
+.contenu-au-milieu {
+    width: 35%; /* Occupe 50% de la largeur de la vue (écran) */
+    padding: 20px; /* Ajoutez un remplissage selon vos besoins */
+    box-sizing: border-box; /* Inclut les marges et les rembourrages dans la largeur */
+    /* background-color: rgba(255, 255, 255, 0.8); Fond semi-transparent pour le contenu */
+    background-color: rgba(144, 179, 177 , 0.5);
+    height:80%;
+    border-radius: 15px ;
+    box-shadow: 0 0 15px 2px #bdf3f3;
+
+}
+h2{
+    margin:auto;
+    text-align:center;
+    font-variant: small-caps;
+    font-size: 2rem;
+    color: rgb(2, 22, 31);
+    text-shadow:2px 2px  2px rgb(125, 189, 214);
+    letter-spacing:4px;
+    margin-bottom:50px;
+    margin-top:10px;
+    text-decoration: underline;
+
+}
+label{
+    font-size: 1.2rem;
+    color: rgb(49, 31, 2);
+}
+select , input{
+    width: 200px;
+    height: 30px;
+}
+.envoie{
+    margin:auto;
+    text-align: center;
+}
+.in{
+    margin-top: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+.in:hover{
+    background-color: black;
+    color: rgba(17, 221, 210, 0.5);
+}
+.form-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-item label {
+    flex-basis: 30%;
+    flex-shrink: 0;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-item input,
+.form-item select {
+    flex-basis: 60%;
+    flex-shrink: 0;
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+h1{
+    margin:auto;
+    text-align:center;
+    font-size: 2.5rem;
+    color: rgb(2, 9, 12);
+    text-shadow:2px 2px  2px rgb(25, 37, 42);
+    letter-spacing:4px;
+    margin-bottom:10px;
+    margin-top:10px;
+    text-decoration: underline;
+
+}
+body{
+    background-color: rgb(161, 158, 158);
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    /* align-items: center; */
+}
+th{
+    height:30px;
+    width:200px;
+    margin:20px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 10px;
+    border:transparent ;
+}
+th{
+    border: rgb(223, 58, 85) 2px solid;
+    background-color: rgb(222, 154, 166);
+    border-radius: 20px;
+    height: 45px;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+td{
+    border:rgb(17, 101, 102) 2px solid;
+    background-color: rgb(134, 207, 223);
+    border-radius: 20px;
+    text-align: center;
+    color:black;
+    height:40px;
+}
+.action{
+	display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+}
+.action form{
+	margin: 0 10px;
+}
+button{
+    height:35px;
+    border-radius:10px;
+    border:red 1px solid;
+    background-color: rgb(214, 182, 182);
+    color:rgb(14, 12, 12);
+
+}
+button:hover{
+    background-color: rgb(237, 96, 96);
+    color:white;
+}
+.check{
+    width: 100px; /* Largeur */
+    height: 20px; /* Hauteur */
+}
+.add{
+    text-align:left;
+
+}
+.lien_gauche{
+    float:left;
+}
