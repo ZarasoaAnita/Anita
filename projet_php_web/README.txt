@@ -14,7 +14,7 @@ Cette application Web offre une solution complète pour gérer efficacement une 
 
 ## Instructions d'utilisation
 
-1. Commencez par ouvrir le fichier `index.php` dans votre navigateur. Cela vous dirigera vers la page d'accueil de l'application.
+1. Commencer par executer le script sql (todolist.sql) puis ouvrir le fichier `index.php` dans projet_php  dans votre navigateur. Cela vous dirigera vers la page d'accueil de l'application.
 
 2. Sur la page d'accueil, vous verrez deux choix :
    - "Lister les tâches" : Utilisez ce lien pour afficher la liste des tâches existantes.

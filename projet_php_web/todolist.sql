@@ -1,3 +1,11 @@
+CREATE USER 'iris'@'localhost' IDENTIFIED BY 'motdepasse';
+
+GRANT ALL PRIVILEGES ON *.* TO 'iris'@'localhost';
+
+CREATE DATABASE IF NOT EXISTS todolist;
+
+USE todolist;
+
 CREATE TABLE IF NOT EXISTS tache (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titre VARCHAR(100) NOT NULL,
