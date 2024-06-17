@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form action="payment.html" method="post">
+            <h2>Register</h2>
+
+            <div class="inputBox">
+                <input type="text" required="required" name="name">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="password">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" required="required" name="email">
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <label for="package" class="label_package">Package: </label>&ensp;
+                <select id="package" name="package" required>
+                    <option value="basic">Basic Package</option>
+                    <option value="premium">Premium Package</option>
+                    <option value="diamond">Diamond Package</option>
+                </select>
+            </div>
+
+            <input type="submit" name="submit" value="Pay" class="submit">
+
+     
+        </form>
+    </div>
+
+    
+</body>
+</html>
