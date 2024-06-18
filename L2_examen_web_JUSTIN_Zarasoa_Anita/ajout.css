@@ -1,0 +1,72 @@
+/* Mise en page générale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #363636;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Stylisation des champs de formulaire */
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none; /* Empêche la redimensionnement de la zone de texte */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+.titre_principal{
+    text-decoration: underline;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+    }
+}

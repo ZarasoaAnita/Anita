@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête avec logo, champ de recherche et bouton d'ajout de livre -->
+    <header>
+        <div class="logo">LIBRARY</div>
+
+        <section class="search-container">  
+            <div class="form">
+                <select id="search-select">
+                    <option value="titre">Titre</option>
+                    <option value="auteurs">Auteur(s)</option>
+                    <option value="isbn">ISBN</option>
+                    <option value="editeur">Éditeur</option>
+                    <option value="datePublication">Date de Publication</option>
+                    <option value="genre">Genre</option>
+                    <option value="resume">Résumé</option>
+                    <option value="langue">Langue</option>
+                    <option value="nombrePages">Nombre de Pages</option>
+                    <option value="etat">État</option>
+                </select>            
+                <input type="text" placeholder="Recherche ici..." id="search-input">
+            </div>
+        </section>
+        
+        <button id="add-book-btn">Ajouter un livre</button>
+    </header>
+
+    
+    
+
+    <main class="principal">
+
+        <section >
+            <div class="productContainer" id="product-container">
+                <!-- Les produits seront générés ici -->
+            </div>
+        </section>
+    
+        <section id="pagination">
+            <!-- pagination ici -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

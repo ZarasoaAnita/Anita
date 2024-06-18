@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Livre</title>
+    <link rel="stylesheet" href="ajout.css">
+</head>
+<body>
+    <h2 class="titre_principal">Ajouter un Nouveau Livre</h2>
+    <form method="post" action="index.html">
+        <label for="titre">Titre:</label><br>
+        <input type="text" id="titre" name="titre" required><br>
+
+        <label for="auteurs">Auteur(s):</label><br>
+        <input type="text" id="auteurs" name="auteurs" required><br>
+
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn"><br>
+
+        <label for="image">URL de l'image:</label><br>
+        <input type="text" id="image" name="image"><br>
+
+        <label for="editeur">Éditeur:</label><br>
+        <input type="text" id="editeur" name="editeur"><br>
+
+        <label for="datePublication">Date de Publication:</label><br>
+        <input type="date" id="datePublication" name="datePublication"><br>
+
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre"><br>
+
+        <label for="resume">Résumé:</label><br>
+        <textarea id="resume" name="resume" rows="4"></textarea><br>
+
+        <label for="nombrePages">Nombre de Pages:</label><br>
+        <input type="number" id="nombrePages" name="nombrePages"><br>
+
+        <label for="etat">État:</label><br>
+        <select id="etat" name="etat">
+            <option value="Neuf">Neuf</option>
+            <option value="Bon">Bon</option>
+            <option value="Endommagé">Endommagé</option>
+        </select><br>
+
+        <label for="emplacement">Emplacement:</label><br>
+        <input type="text" id="emplacement" name="emplacement"><br>
+
+        <button type="submit">Ajouter le Livre</button>
+    </form>
+
+    <!-- <script src="ajout.js"></script> -->
+   
+</body>
+</html>
